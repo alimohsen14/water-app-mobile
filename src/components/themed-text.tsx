@@ -14,8 +14,12 @@ export function ThemedText({
 }: ThemedTextProps) {
   const { colors } = useAppTheme();
   const variantColors = {
+    largeTitle: colors.text,
+    title: colors.text,
+    headline: colors.text,
     body: colors.text,
     subhead: colors.secondaryText,
+    caption: colors.secondaryText,
   } as const;
 
   return (
