@@ -1,5 +1,36 @@
 {
   "home": {
-    "tagline": "عدّل src/app/index.tsx لبدء العمل على تطبيقك!"
+    "tagline": "عدّل src/app/index.tsx لبدء العمل على تطبيقك!",
+    "settings": "الإعدادات",
+    "greeting": "مرحبًا بعودتك",
+    "meterNumber": "رقم العداد {{number}}",
+    "currentReading": "القراءة الحالية",
+    "lastUpdated": "آخر تحديث {{time}}",
+    "lastUpdatedValue": "الآن",
+    "todayConsumption": "استهلاك اليوم",
+    "yesterdayConsumption": "استهلاك الأمس",
+    "averageDailyConsumption": "متوسط الاستهلاك اليومي",
+    "cubicMeter": "م³"
+  },
+  "tabs": {
+    "home": "الرئيسية",
+    "consumption": "الاستهلاك",
+    "alerts": "التنبيهات",
+    "account": "الحساب"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": {
+      "label": "اللغة",
+      "system": "النظام",
+      "english": "الإنجليزية",
+      "arabic": "العربية"
+    },
+    "appearance": {
+      "label": "المظهر",
+      "system": "النظام",
+      "light": "فاتح",
+      "dark": "داكن"
+    }
   }
 }

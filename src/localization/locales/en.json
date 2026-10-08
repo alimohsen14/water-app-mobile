@@ -1,5 +1,36 @@
 {
   "home": {
-    "tagline": "Edit src/app/index.tsx to start working on your app!"
+    "tagline": "Edit src/app/index.tsx to start working on your app!",
+    "settings": "Settings",
+    "greeting": "Welcome back",
+    "meterNumber": "Meter No. {{number}}",
+    "currentReading": "Current reading",
+    "lastUpdated": "Last updated {{time}}",
+    "lastUpdatedValue": "just now",
+    "todayConsumption": "Today's consumption",
+    "yesterdayConsumption": "Yesterday's consumption",
+    "averageDailyConsumption": "Average daily consumption",
+    "cubicMeter": "m³"
+  },
+  "tabs": {
+    "home": "Home",
+    "consumption": "Consumption",
+    "alerts": "Alerts",
+    "account": "Account"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": {
+      "label": "Language",
+      "system": "System",
+      "english": "English",
+      "arabic": "Arabic"
+    },
+    "appearance": {
+      "label": "Appearance",
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    }
   }
 }
