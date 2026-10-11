@@ -38,6 +38,7 @@ const TABS: readonly TabItem[] = [
     labelKey: "tabs.alerts",
     icon: "notifications-outline",
     activeIcon: "notifications",
+    route: "/alerts",
   },
   {
     key: "account",

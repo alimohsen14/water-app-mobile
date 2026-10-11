@@ -55,6 +55,32 @@
       "fri": "Fri"
     }
   },
+  "alerts": {
+    "title": "Alerts",
+    "empty": "No alerts yet",
+    "items": {
+      "unusualConsumption": {
+        "title": "Unusual consumption",
+        "body": "A consumption higher than the usual rate has been recorded.",
+        "time": "Today, 10:35 AM"
+      },
+      "lowBattery": {
+        "title": "Low battery level",
+        "body": "Battery level is 15%.",
+        "time": "Yesterday, 08:20 AM"
+      },
+      "valveIssue": {
+        "title": "Valve problem",
+        "body": "An error was detected in the valve.",
+        "time": "Sep 12, 2024, 03:15 PM"
+      },
+      "meterReconnected": {
+        "title": "Meter reconnected",
+        "body": "The connection to the meter has been restored.",
+        "time": "Sep 10, 2024, 09:20 AM"
+      }
+    }
+  },
   "tabs": {
     "home": "Home",
     "consumption": "Consumption",
