@@ -12,6 +12,49 @@
     "averageDailyConsumption": "متوسط الاستهلاك اليومي",
     "cubicMeter": "م³"
   },
+  "consumption": {
+    "title": "الاستهلاك",
+    "cubicMeter": "م³",
+    "tabs": {
+      "daily": "يومي",
+      "monthly": "شهري"
+    },
+    "highest": "أعلى استهلاك",
+    "lowest": "أقل استهلاك",
+    "averageMonthly": "متوسط الاستهلاك الشهري",
+    "averageDaily": "متوسط الاستهلاك اليومي",
+    "selectMonth": "اختر الشهر",
+    "previousMonth": "الشهر السابق",
+    "nextMonth": "الشهر التالي",
+    "previousYear": "السنة السابقة",
+    "nextYear": "السنة التالية",
+    "openMonthPicker": "فتح منتقي الشهر",
+    "done": "تم",
+    "cancel": "إلغاء",
+    "months": {
+      "jan": "كانون2",
+      "feb": "شباط",
+      "mar": "آذار",
+      "apr": "نيسان",
+      "may": "أيار",
+      "jun": "حزيران",
+      "jul": "تموز",
+      "aug": "آب",
+      "sep": "أيلول",
+      "oct": "تشرين1",
+      "nov": "تشرين2",
+      "dec": "كانون1"
+    },
+    "days": {
+      "sat": "السبت",
+      "sun": "الأحد",
+      "mon": "الإثنين",
+      "tue": "الثلاثاء",
+      "wed": "الأربعاء",
+      "thu": "الخميس",
+      "fri": "الجمعة"
+    }
+  },
   "tabs": {
     "home": "الرئيسية",
     "consumption": "الاستهلاك",

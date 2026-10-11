@@ -20,6 +20,7 @@ export default function RootLayout() {
         }}
       >
         <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="consumption" options={{ headerShown: false }} />
         <Stack.Screen
           name="settings"
           options={{ title: t("settings.title") }}
