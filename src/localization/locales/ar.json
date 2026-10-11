@@ -12,6 +12,23 @@
     "averageDailyConsumption": "متوسط الاستهلاك اليومي",
     "cubicMeter": "م³"
   },
+  "meterDetails": {
+    "title": "تفاصيل العداد",
+    "meterNumberLabel": "رقم العداد",
+    "meterNumberValue": "00740038002200",
+    "lastUpdate": {
+      "label": "آخر تحديث",
+      "value": "اليوم، 10:42 صباحاً"
+    },
+    "battery": {
+      "label": "نسبة البطارية",
+      "value": "87%"
+    },
+    "valve": {
+      "label": "حالة الصمام",
+      "open": "مفتوح"
+    }
+  },
   "consumption": {
     "title": "الاستهلاك",
     "cubicMeter": "م³",
