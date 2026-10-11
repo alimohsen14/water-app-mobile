@@ -1,7 +1,6 @@
 {
   "home": {
     "tagline": "عدّل src/app/index.tsx لبدء العمل على تطبيقك!",
-    "settings": "الإعدادات",
     "greeting": "مرحبًا بعودتك",
     "meterNumber": "رقم العداد {{number}}",
     "currentReading": "القراءة الحالية",
@@ -97,6 +96,13 @@
         "time": "10 أيلول 2024، 09:20 صباحاً"
       }
     }
+  },
+  "account": {
+    "title": "الحساب",
+    "meterNumberLabel": "رقم العداد",
+    "meterNumberValue": "00740038002200",
+    "notifications": "إعدادات الإشعارات",
+    "logout": "تسجيل الخروج"
   },
   "tabs": {
     "home": "الرئيسية",
