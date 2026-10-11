@@ -112,18 +112,6 @@ export default function HomeScreen() {
                 color={colors.text}
               />
             </Pressable>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={t("home.settings")}
-              hitSlop={spacing.sm}
-              onPress={() => router.push("/settings")}
-              style={({ pressed }) => [
-                styles.iconButton,
-                pressed && { opacity: opacity.pressed },
-              ]}
-            >
-              <Ionicons name="settings-outline" size={26} color={colors.text} />
-            </Pressable>
           </View>
         </View>
 

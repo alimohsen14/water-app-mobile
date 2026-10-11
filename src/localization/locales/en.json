@@ -1,7 +1,6 @@
 {
   "home": {
     "tagline": "Edit src/app/index.tsx to start working on your app!",
-    "settings": "Settings",
     "greeting": "Welcome back",
     "meterNumber": "Meter No. {{number}}",
     "currentReading": "Current reading",
@@ -97,6 +96,13 @@
         "time": "Sep 10, 2024, 09:20 AM"
       }
     }
+  },
+  "account": {
+    "title": "Account",
+    "meterNumberLabel": "Meter Number",
+    "meterNumberValue": "00740038002200",
+    "notifications": "Notification settings",
+    "logout": "Log out"
   },
   "tabs": {
     "home": "Home",

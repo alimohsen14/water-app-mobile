@@ -45,6 +45,7 @@ const TABS: readonly TabItem[] = [
     labelKey: "tabs.account",
     icon: "person-circle-outline",
     activeIcon: "person-circle",
+    route: "/account",
   },
 ];
 
