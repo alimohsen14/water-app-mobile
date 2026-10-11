@@ -66,7 +66,15 @@ export default function HomeScreen() {
             },
           ]}
         >
-          <View style={styles.headerText}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={t("meterDetails.title")}
+            onPress={() => router.push("/meter-details")}
+            style={({ pressed }) => [
+              styles.headerText,
+              pressed && { opacity: opacity.pressed },
+            ]}
+          >
             <ThemedText
               variant="title"
               style={{ textAlign: isRTL ? "right" : "left" }}
@@ -82,7 +90,7 @@ export default function HomeScreen() {
             >
               {t("home.meterNumber", { number: "\u206600740038002200\u2069" })}
             </ThemedText>
-          </View>
+          </Pressable>
           <View
             style={[
               styles.headerActions,

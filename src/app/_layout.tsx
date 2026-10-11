@@ -23,6 +23,10 @@ export default function RootLayout() {
         <Stack.Screen name="consumption" options={{ headerShown: false }} />
         <Stack.Screen name="alerts" options={{ headerShown: false }} />
         <Stack.Screen
+          name="meter-details"
+          options={{ title: t("meterDetails.title") }}
+        />
+        <Stack.Screen
           name="settings"
           options={{ title: t("settings.title") }}
         />

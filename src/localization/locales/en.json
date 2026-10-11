@@ -12,6 +12,23 @@
     "averageDailyConsumption": "Average daily consumption",
     "cubicMeter": "m³"
   },
+  "meterDetails": {
+    "title": "Meter Details",
+    "meterNumberLabel": "Meter Number",
+    "meterNumberValue": "00740038002200",
+    "lastUpdate": {
+      "label": "Last Update",
+      "value": "Today, 10:42 AM"
+    },
+    "battery": {
+      "label": "Battery Percentage",
+      "value": "87%"
+    },
+    "valve": {
+      "label": "Valve Status",
+      "open": "Open"
+    }
+  },
   "consumption": {
     "title": "Consumption",
     "cubicMeter": "m³",
