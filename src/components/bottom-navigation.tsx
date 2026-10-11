@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { type Href, router } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { Platform, Pressable, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -14,6 +15,7 @@ type TabItem = {
   labelKey: TxKey;
   icon: keyof typeof Ionicons.glyphMap;
   activeIcon: keyof typeof Ionicons.glyphMap;
+  route?: Href;
 };
 
 const TABS: readonly TabItem[] = [
@@ -22,12 +24,14 @@ const TABS: readonly TabItem[] = [
     labelKey: "tabs.home",
     icon: "home-outline",
     activeIcon: "home",
+    route: "/",
   },
   {
     key: "consumption",
     labelKey: "tabs.consumption",
     icon: "bar-chart-outline",
     activeIcon: "bar-chart",
+    route: "/consumption",
   },
   {
     key: "alerts",
@@ -58,6 +62,16 @@ export function BottomNavigation({
   const styles = createStyles(colors);
   const isRTL = i18n.dir() === "rtl";
 
+  function handlePress(tab: TabItem) {
+    if (onTabPress) {
+      onTabPress(tab.key);
+      return;
+    }
+    if (tab.route && tab.key !== active) {
+      router.navigate(tab.route);
+    }
+  }
+
   return (
     <View
       style={[
@@ -76,7 +90,7 @@ export function BottomNavigation({
         return (
           <Pressable
             key={tab.key}
-            onPress={() => onTabPress?.(tab.key)}
+            onPress={() => handlePress(tab)}
             accessibilityRole="tab"
             accessibilityState={{ selected: isActive }}
             accessibilityLabel={t(tab.labelKey)}
