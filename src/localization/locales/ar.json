@@ -1,4 +1,16 @@
 {
+  "login": {
+    "title": "عداد المياه",
+    "subtitle": "سجّل الدخول للمتابعة",
+    "usernameLabel": "اسم المستخدم",
+    "usernamePlaceholder": "أدخل اسم المستخدم",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "loginButton": "تسجيل الدخول",
+    "error": "اسم المستخدم أو كلمة المرور غير صحيحة"
+  },
   "home": {
     "tagline": "عدّل src/app/index.tsx لبدء العمل على تطبيقك!",
     "greeting": "مرحبًا بعودتك",
