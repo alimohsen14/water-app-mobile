@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { Redirect, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useTranslation } from "react-i18next";
 import { Pressable, ScrollView, StyleSheet, View } from "react-native";
@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { BottomNavigation } from "@/components/bottom-navigation";
 import { ThemedText } from "@/components/themed-text";
+import { useAuthStore } from "@/stores/auth-store";
 import { opacity, radius, spacing, useAppTheme } from "@/theme";
 
 type AppColors = ReturnType<typeof useAppTheme>["colors"];
@@ -45,6 +46,11 @@ export default function HomeScreen() {
   const insets = useSafeAreaInsets();
   const styles = createStyles(colors);
   const isRTL = i18n.dir() === "rtl";
+  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+
+  if (!isAuthenticated) {
+    return <Redirect href="/login" />;
+  }
 
   return (
     <View style={[styles.root, { direction: isRTL ? "rtl" : "ltr" }]}>

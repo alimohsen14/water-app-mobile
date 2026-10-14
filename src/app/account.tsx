@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -8,6 +9,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { BottomNavigation } from "@/components/bottom-navigation";
 import { ThemedText } from "@/components/themed-text";
 import type { TxKey } from "@/localization/i18n";
+import { useAuthStore } from "@/stores/auth-store";
 import { type LocaleMode, useLocaleStore } from "@/stores/locale-store";
 import { useNotificationsStore } from "@/stores/notifications-store";
 import { type ThemeMode, useThemeStore } from "@/stores/theme-store";
@@ -46,6 +48,7 @@ export default function AccountScreen() {
   const setNotificationsEnabled = useNotificationsStore(
     (state) => state.setEnabled,
   );
+  const logout = useAuthStore((state) => state.logout);
 
   const [openSection, setOpenSection] = useState<
     "language" | "appearance" | null
@@ -173,6 +176,10 @@ export default function AccountScreen() {
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={t("account.logout")}
+          onPress={() => {
+            logout();
+            router.replace("/login");
+          }}
           style={({ pressed }) => [
             styles.card,
             styles.row,

@@ -1,4 +1,16 @@
 {
+  "login": {
+    "title": "Water Meter",
+    "subtitle": "Sign in to continue",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "loginButton": "Login",
+    "error": "Incorrect username or password"
+  },
   "home": {
     "tagline": "Edit src/app/index.tsx to start working on your app!",
     "greeting": "Welcome back",
